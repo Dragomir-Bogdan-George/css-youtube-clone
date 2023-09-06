@@ -9,21 +9,40 @@
       }
 
       .search-bar {
+        display: block;
       }
 
       .video-title {
         width: 330px;
       }
+
+      .video-preview {
+        width: 350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
-    <img class="thumbnail" src="thumbnails/github-actions.webp" />
 
-    <p class="video-title">
-      5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
-    </p>
-    <p class="video-author">Fireship</p>
-    <p class="video-stats">616K views &#183; 3 years ago</p>
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/github-actions.webp" />
+
+      <p class="video-title">
+        5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
+      </p>
+      <p class="video-author">Fireship</p>
+      <p class="video-stats">616K views &#183; 3 years ago</p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/backend.webp" />
+
+      <p class="video-title">How The Backend Works</p>
+      <p class="video-author">Web Dev Simplified</p>
+      <p class="video-stats">510K views &#183; 4 years ago</p>
+    </div>
   </body>
 </html>
