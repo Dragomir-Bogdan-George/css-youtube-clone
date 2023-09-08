@@ -2,7 +2,18 @@
 <html>
   <head>
     <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       .thumbnail {
         width: 350px;
         display: block;
@@ -13,7 +24,11 @@
       }
 
       .video-title {
-        width: 330px;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
       }
 
       .video-preview {
@@ -22,27 +37,73 @@
         vertical-align: top;
         margin-right: 15px;
       }
+
+      .channel-picture {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-picture {
+        width: 40px;
+        border-radius: 50px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
+
+      .video-author,
+      .video-stats {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-author {
+        margin-bottom: 4px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
 
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/github-actions.webp" />
-
-      <p class="video-title">
-        5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
-      </p>
-      <p class="video-author">Fireship</p>
-      <p class="video-stats">616K views &#183; 3 years ago</p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/github-actions.webp" />
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpg" />
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
+          </p>
+          <p class="video-author">Fireship</p>
+          <p class="video-stats">616K views &#183; 3 years ago</p>
+        </div>
+      </div>
     </div>
 
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/backend.webp" />
-
-      <p class="video-title">How The Backend Works</p>
-      <p class="video-author">Web Dev Simplified</p>
-      <p class="video-stats">510K views &#183; 4 years ago</p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/backend.webp" />
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-2.jpg" />
+        </div>
+        <div class="video-info">
+          <p class="video-title">How The Backend Works</p>
+          <p class="video-author">Web Dev Simplified</p>
+          <p class="video-stats">510K views &#183; 4 years ago</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
