@@ -15,8 +15,7 @@
         margin-bottom: 0;
       }
       .thumbnail {
-        width: 350px;
-        display: block;
+        width: 100%;
       }
 
       .search-bar {
@@ -31,22 +30,9 @@
         margin-bottom: 12px;
       }
 
-      .video-preview {
-        width: 350px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      }
-
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .profile-picture {
@@ -67,41 +53,118 @@
       .video-author {
         margin-bottom: 4px;
       }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/github-actions.webp" />
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pictures/channel-1.jpg" />
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/github-actions.webp" />
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
-          </p>
-          <p class="video-author">Fireship</p>
-          <p class="video-stats">616K views &#183; 3 years ago</p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
+            </p>
+            <p class="video-author">Fireship</p>
+            <p class="video-stats">616K views &#183; 3 years ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/backend.webp" />
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pictures/channel-2.jpg" />
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/backend.webp" />
         </div>
-        <div class="video-info">
-          <p class="video-title">How The Backend Works</p>
-          <p class="video-author">Web Dev Simplified</p>
-          <p class="video-stats">510K views &#183; 4 years ago</p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">How The Backend Works</p>
+            <p class="video-author">Web Dev Simplified</p>
+            <p class="video-stats">510K views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/microservices.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-3.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Microservices Explained in 5 Minutes</p>
+            <p class="video-author">5 Minutes or Less</p>
+            <p class="video-stats">412K views &#183; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/weather.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-4.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              ASMR Programming - Weather App With Javascript - No Talking
+            </p>
+            <p class="video-author">AsmrProg</p>
+            <p class="video-stats">1.9M views &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/60-30-10-rule.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-5.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">60-30-10 Color Rule</p>
+            <p class="video-author">Jesse Showalter</p>
+            <p class="video-stats">1.4M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/await-javascript.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-6.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Javascript Promises vs Async Await Explained (in 5 Minutes)
+            </p>
+            <p class="video-author">Roberts Dev Talk</p>
+            <p class="video-stats">367K views &#183; 2 years ago</p>
+          </div>
         </div>
       </div>
     </div>
