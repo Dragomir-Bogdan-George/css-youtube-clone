@@ -17,6 +17,7 @@ Welcome to my YouTube Clone project! This project is a demonstration of my web d
 # Getting Started
 
 Clone the repository to your local machine.
+
 Open the youtube.html file in your web browser.
 
 # Acknowledgments
