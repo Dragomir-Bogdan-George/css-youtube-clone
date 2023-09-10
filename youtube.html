@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
         <img class="youtube-logo" src="icons/youtube-logo.svg" />
@@ -25,6 +25,7 @@
           <img class="search-icon" src="icons/search.svg" />
           <div class="tooltip">Search</div>
         </button>
+        <!-- Put position absolute inside position relative -->
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
           <div class="tooltip">Search with your voice</div>
@@ -52,9 +53,9 @@
           <div class="tooltip">Picture</div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="icons/home.svg" />
         <div>Home</div>
@@ -79,316 +80,320 @@
         <img src="icons/library.svg" />
         <div>Library</div>
       </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=eB0nUzAI7M8"
-            ><img class="thumbnail" src="thumbnails/github-actions.webp"
-          /></a>
-          <div class="video-time">12:12</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/c/fireship"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-1.jpg"
-            /></a>
-          </div>
-          <div class="video-info">
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=eB0nUzAI7M8"
-              ><p class="video-title">
-                5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
-              </p></a
-            >
-            <p class="video-author">Fireship</p>
-            <p class="video-stats">616K views &#183; 3 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=4r6WdaY3SOA"
-            ><img class="thumbnail" src="thumbnails/backend.webp"
-          /></a>
-          <div class="video-time">4:14</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/c/WebDevSimplified"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-2.jpg"
+              ><img class="thumbnail" src="thumbnails/github-actions.webp"
             /></a>
+            <div class="video-time">12:12</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/fireship"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-1.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=eB0nUzAI7M8"
+                ><p class="video-title">
+                  5 Ways to DevOps-ify your App - Ghithub Actions Tutorial
+                </p></a
+              >
+              <p class="video-author">Fireship</p>
+              <p class="video-stats">616K views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=4r6WdaY3SOA"
-              ><p class="video-title">How The Backend Works</p></a
-            >
-            <p class="video-author">Web Dev Simplified</p>
-            <p class="video-stats">510K views &#183; 4 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=lL_j7ilk7rc"
-            ><img class="thumbnail" src="thumbnails/microservices.webp"
-          /></a>
-          <div class="video-time">5:17</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@5-minutesorless"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-3.jpg"
+              ><img class="thumbnail" src="thumbnails/backend.webp"
             /></a>
+            <div class="video-time">4:14</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/WebDevSimplified"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-2.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=4r6WdaY3SOA"
+                ><p class="video-title">How The Backend Works</p></a
+              >
+              <p class="video-author">Web Dev Simplified</p>
+              <p class="video-stats">510K views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=lL_j7ilk7rc"
-              ><p class="video-title">
-                Microservices Explained in 5 Minutes
-              </p></a
-            >
-            <p class="video-author">5 Minutes or Less</p>
-            <p class="video-stats">412K views &#183; 8 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=iILFBGm_I9M"
-            ><img class="thumbnail" src="thumbnails/weather.webp"
-          /></a>
-          <div class="video-time">20:30</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@AsmrProg"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-4.jpg"
+              ><img class="thumbnail" src="thumbnails/microservices.webp"
             /></a>
+            <div class="video-time">5:17</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@5-minutesorless"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-3.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=lL_j7ilk7rc"
+                ><p class="video-title">
+                  Microservices Explained in 5 Minutes
+                </p></a
+              >
+              <p class="video-author">5 Minutes or Less</p>
+              <p class="video-stats">412K views &#183; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=iILFBGm_I9M"
-              ><p class="video-title">
-                ASMR Programming - Weather App With Javascript - No Talking
-              </p></a
-            >
-            <p class="video-author">AsmrProg</p>
-            <p class="video-stats">1.9M views &#183; 7 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=UWwNIMHFdW4"
-            ><img class="thumbnail" src="thumbnails/60-30-10-rule.webp"
-          /></a>
-          <div class="video-time">6:18</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/channel/UCvBGFeXbBrq3W9_0oNLJREQ"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-5.jpg"
+              ><img class="thumbnail" src="thumbnails/weather.webp"
             /></a>
+            <div class="video-time">20:30</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@AsmrProg"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-4.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=iILFBGm_I9M"
+                ><p class="video-title">
+                  ASMR Programming - Weather App With Javascript - No Talking
+                </p></a
+              >
+              <p class="video-author">AsmrProg</p>
+              <p class="video-stats">1.9M views &#183; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=UWwNIMHFdW4"
-              ><p class="video-title">60-30-10 Color Rule</p></a
-            >
-            <p class="video-author">Jesse Showalter</p>
-            <p class="video-stats">1.4M views &#183; 1 year ago</p>
+              ><img class="thumbnail" src="thumbnails/60-30-10-rule.webp"
+            /></a>
+            <div class="video-time">6:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/channel/UCvBGFeXbBrq3W9_0oNLJREQ"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-5.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=UWwNIMHFdW4"
+                ><p class="video-title">60-30-10 Color Rule</p></a
+              >
+              <p class="video-author">Jesse Showalter</p>
+              <p class="video-stats">1.4M views &#183; 1 year ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=li7FzDHYZpc"
-            ><img class="thumbnail" src="thumbnails/await-javascript.webp"
-          /></a>
-          <div class="video-time">5:50</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/c/RobertsDevTalk"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-6.jpg"
-            /></a>
-          </div>
-          <div class="video-info">
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=li7FzDHYZpc"
-              ><p class="video-title">
-                Javascript Promises vs Async Await Explained (in 5 Minutes)
-              </p></a
-            >
-            <p class="video-author">Roberts Dev Talk</p>
-            <p class="video-stats">367K views &#183; 2 years ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=ThyMiimsAA0"
-            ><img class="thumbnail" src="thumbnails/bun1.0.webp"
-          /></a>
-          <div class="video-time">5:21</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@awesome-coding"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-7.jpg"
+              ><img class="thumbnail" src="thumbnails/await-javascript.webp"
             /></a>
+            <div class="video-time">5:50</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/RobertsDevTalk"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-6.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=li7FzDHYZpc"
+                ><p class="video-title">
+                  Javascript Promises vs Async Await Explained (in 5 Minutes)
+                </p></a
+              >
+              <p class="video-author">Roberts Dev Talk</p>
+              <p class="video-stats">367K views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=ThyMiimsAA0"
-              ><p class="video-title">Bun1.0 is out!</p></a
-            >
-            <p class="video-author">Awesome</p>
-            <p class="video-stats">34K views &#183; 3 days ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=DzNmUNvnB04"
-            ><img class="thumbnail" src="thumbnails/tmux.webp"
-          /></a>
-          <div class="video-time">13:30</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@dreamsofcode"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-8.jpg"
+              ><img class="thumbnail" src="thumbnails/bun1.0.webp"
             /></a>
+            <div class="video-time">5:21</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@awesome-coding"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-7.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ThyMiimsAA0"
+                ><p class="video-title">Bun1.0 is out!</p></a
+              >
+              <p class="video-author">Awesome</p>
+              <p class="video-stats">34K views &#183; 3 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=DzNmUNvnB04"
-              ><p class="video-title">
-                Tmux has forever changed the way I write code
-              </p></a
-            >
-            <p class="video-author">Dreams of Code</p>
-            <p class="video-stats">520K views &#183; 4 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=lkIFF4maKMU"
-            ><img class="thumbnail" src="thumbnails/javascript-concepts.webp"
-          /></a>
-          <div class="video-time">12:24</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/c/fireship"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-9.jpg"
+              ><img class="thumbnail" src="thumbnails/tmux.webp"
             /></a>
+            <div class="video-time">13:30</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@dreamsofcode"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-8.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=DzNmUNvnB04"
+                ><p class="video-title">
+                  Tmux has forever changed the way I write code
+                </p></a
+              >
+              <p class="video-author">Dreams of Code</p>
+              <p class="video-stats">520K views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=lkIFF4maKMU"
-              ><p class="video-title">
-                100+ JavaScript Concepts you Need to Know
-              </p></a
-            >
-            <p class="video-author">Fireship</p>
-            <p class="video-stats">1.2M views &#183; 9 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=MSq_DCRxOxw"
-            ><img class="thumbnail" src="thumbnails/react-code.webp"
-          /></a>
-          <div class="video-time">18:23</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@CoderOne"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-10.jpg"
+              ><img class="thumbnail" src="thumbnails/javascript-concepts.webp"
             /></a>
+            <div class="video-time">12:24</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/fireship"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-9.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=lkIFF4maKMU"
+                ><p class="video-title">
+                  100+ JavaScript Concepts you Need to Know
+                </p></a
+              >
+              <p class="video-author">Fireship</p>
+              <p class="video-stats">1.2M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=MSq_DCRxOxw"
-              ><p class="video-title">
-                This is the Only Right Way to Write React clean-code - SOLID
-              </p></a
-            >
-            <p class="video-author">CoderOne</p>
-            <p class="video-stats">464K views &#183; 9 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=jx5jmI0UlXU"
-            ><img class="thumbnail" src="thumbnails/css-position.webp"
-          /></a>
-          <div class="video-time">9:26</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@WebDevSimplified"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-11.jpg"
+              ><img class="thumbnail" src="thumbnails/react-code.webp"
             /></a>
+            <div class="video-time">18:23</div>
           </div>
-          <div class="video-info">
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@CoderOne"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-10.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=MSq_DCRxOxw"
+                ><p class="video-title">
+                  This is the Only Right Way to Write React clean-code - SOLID
+                </p></a
+              >
+              <p class="video-author">CoderOne</p>
+              <p class="video-stats">464K views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=jx5jmI0UlXU"
-              ><p class="video-title">Learn CSS Position in 9 Minutes</p></a
-            >
-            <p class="video-author">Web Dev Simplified</p>
-            <p class="video-stats">1.7M views &#183; 4 years ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=SbR1lRhcuNs"
-            ><img class="thumbnail" src="thumbnails/wifi-rates.webp"
-          /></a>
-          <div class="video-time">14:19</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <a href="https://www.youtube.com/@TallPaulTech"
-              ><img
-                class="profile-picture"
-                src="channel-pictures/channel-12.jpg"
+              ><img class="thumbnail" src="thumbnails/css-position.webp"
             /></a>
+            <div class="video-time">9:26</div>
           </div>
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=SbR1lRhcuNs"
-              ><p class="video-title">Your Wi-Fi Is Slow Because Of This</p></a
-            >
-            <p class="video-author">Tall Paul Tech</p>
-            <p class="video-stats">2.3K views &#183; 6 hours ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@WebDevSimplified"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-11.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=jx5jmI0UlXU"
+                ><p class="video-title">Learn CSS Position in 9 Minutes</p></a
+              >
+              <p class="video-author">Web Dev Simplified</p>
+              <p class="video-stats">1.7M views &#183; 4 years ago</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=SbR1lRhcuNs"
+              ><img class="thumbnail" src="thumbnails/wifi-rates.webp"
+            /></a>
+            <div class="video-time">14:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@TallPaulTech"
+                ><img
+                  class="profile-picture"
+                  src="channel-pictures/channel-12.jpg"
+              /></a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=SbR1lRhcuNs"
+                ><p class="video-title">
+                  Your Wi-Fi Is Slow Because Of This
+                </p></a
+              >
+              <p class="video-author">Tall Paul Tech</p>
+              <p class="video-stats">2.3K views &#183; 6 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
