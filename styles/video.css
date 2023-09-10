@@ -80,3 +80,7 @@
   bottom: 8px;
   right: 5px;
 }
+
+.video-grid a {
+  text-decoration: none;
+}
