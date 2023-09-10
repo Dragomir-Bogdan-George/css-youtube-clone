@@ -22,4 +22,4 @@ Open the youtube.html file in your web browser.
 
 # Acknowledgments
 
-Special thanks to the developers and designers who inspire us with their innovative web creations on YouTube!
+Special thanks to Simon from SuperSimple.dev (SuperSimpleDev on YouTube).
