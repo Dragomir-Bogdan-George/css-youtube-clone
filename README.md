@@ -22,4 +22,4 @@ Open the youtube.html file in your web browser.
 
 # Acknowledgments
 
-Special thanks to Simon from SuperSimple.dev (SuperSimpleDev on YouTube).
+Special thanks to Simon from supersimple.dev (SuperSimpleDev on YouTube).
