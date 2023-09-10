@@ -69,7 +69,10 @@
 
 .search-button .tooltip,
 .voice-search-button .tooltip,
-.upload-icon-container .tooltip {
+.upload-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.profile-picture-container .tooltip,
+.youtube-container .tooltip {
   font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
@@ -89,13 +92,18 @@
 
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
-.upload-icon-container:hover .tooltip {
+.upload-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.profile-picture-container:hover .tooltip,
+.youtube-container:hover .tooltip {
   opacity: 1;
 }
 
 .search-button,
 .voice-search-button,
-.upload-icon-container {
+.upload-icon-container,
+.profile-picture-container,
+.youtube-container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -141,6 +149,9 @@
 
 .notifications-icon-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .notifications-count {
