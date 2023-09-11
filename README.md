@@ -29,4 +29,5 @@ Special thanks to Simon from supersimple.dev (SuperSimpleDev on YouTube).
 Below there are two screenshots: the first one shows the layout of the page in windowed mode (or width below 1200.01px) and the second one shows the layout in fullscreen mode (or width over 1200.01px)
 
 ![](Screenshots/screenshot-windowed-design.png)
+
 ![](Screenshots/screenshot-fullscreen-design.png)
